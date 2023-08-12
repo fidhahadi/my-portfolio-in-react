@@ -3,7 +3,6 @@ import './AboutMe.css'
 import { Card, StackDivider, Box, CardHeader, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Button, ButtonGroup, SimpleGrid, VStack} from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faCalendar, faMapLocation } from '@fortawesome/free-solid-svg-icons'
-import CV from './Fidha_Rafeeque_N_Resume.pdf';
 
 
 function AboutMe() {
@@ -30,14 +29,7 @@ function AboutMe() {
         </CardBody>
   <Divider />
         <CardFooter>
-          <ButtonGroup spacing='2'>
-            <Button variant='solid' colorScheme='blue'>
-              Hire Me
-            </Button>
-            <Button variant='ghost' colorScheme='blue'>
-              <a href={CV} download="Fidha_Rafeeque_resume">Download CV</a>
-            </Button>
-          </ButtonGroup>
+          
         </CardFooter>
     </Card>
         <Card backgroundColor={'black'}>
