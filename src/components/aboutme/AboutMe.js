@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
-import { Card, StackDivider, Box, CardHeader, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Button, ButtonGroup, SimpleGrid, VStack} from '@chakra-ui/react'
+import { Card, StackDivider, Box, CardHeader, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, SimpleGrid, VStack} from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faCalendar, faMapLocation } from '@fortawesome/free-solid-svg-icons'
 

@@ -3,6 +3,7 @@ import './Mainpage.css';
 import {ButtonGroup, Button} from '@chakra-ui/react'
 import CV from "./Fidha_Rafeeque_N_Resume.pdf";
 
+
 function Mainpage() {
   return (
     <div className='container-mainpage'>
@@ -17,6 +18,7 @@ function Mainpage() {
               <a href={CV} download="Fidha_Rafeeque_resume">Download CV</a>
             </Button>
           </ButtonGroup>
+          
     </div>
   </div>
   );

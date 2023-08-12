@@ -2,6 +2,10 @@
     text-align: center;
     width: auto;
     height: 743px;
-    background-color: #1e293b;
+    background-color: black;
     color: azure;
+  }
+  .sub-container {
+    padding: 50px 50px 75px 100px;
+    justify-content: space-around;
   }
