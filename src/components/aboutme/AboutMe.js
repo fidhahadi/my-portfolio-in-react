@@ -1,10 +1,109 @@
 import React from 'react'
+import './AboutMe.css'
+import { Card, StackDivider, Box, CardHeader, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Button, ButtonGroup, SimpleGrid, VStack} from '@chakra-ui/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faCalendar, faMapLocation } from '@fortawesome/free-solid-svg-icons'
+
+
 
 function AboutMe() {
   return (
-    <div className='container'>
-
-      <h2>About me section</h2>
+    <div className='container-aboutme'>
+      <h1 className='text-5xl text-left'>About Me</h1>
+      <SimpleGrid spacing={7} templateColumns='repeat(auto-fill, minmax(400px, 1fr))'>
+      <Card maxW='sm' backgroundColor={'black'}>
+        <CardBody>
+          <Image
+            src='https://media.licdn.com/dms/image/C5603AQFrxOlmlqbOjg/profile-displayphoto-shrink_800_800/0/1662710083995?e=1697068800&v=beta&t=NMtOz0gZu1N2zhP4ug3i2DnsuBeKWcIwSuVDwMHuHv0'
+            alt='Green double couch with wooden legs'
+            borderRadius='lg'
+          />
+          <Stack mt='6' spacing='3'>
+            <Heading size='md' color={'white'}>Fidha Rafeeque N</Heading>
+              <Text color={'white'}>
+                Full Stack Developer | Tech Enthusiast | MERN stack | ReactJS | Tailwind CSS
+              </Text>
+                    {/* <Text color='blue.600' fontSize='2xl'>
+                      $450
+                    </Text> */}
+          </Stack>
+        </CardBody>
+  <Divider />
+        <CardFooter>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue'>
+              Hire Me
+            </Button>
+            <Button variant='ghost' colorScheme='blue'>
+              Download CV
+            </Button>
+          </ButtonGroup>
+        </CardFooter>
+    </Card>
+        <Card backgroundColor={'black'}>
+          <CardHeader>
+            <Heading size='md' color={'white'}> Personal Info </Heading>
+          </CardHeader>
+          <CardBody>
+            <VStack align={'flex-start'}>
+          <FontAwesomeIcon color='red' icon={faPhone} />
+          <Text color={'white'}>
+            +918081937750</Text><br/>
+          <FontAwesomeIcon color='green' icon={faEnvelope} />
+          <Text color={'white'}>
+            fidharafeequen@gmail.com
+          </Text><br/>
+          <FontAwesomeIcon color='blue' icon={faMapLocation} />
+          <Text color={'white'}>
+            Sharjah, UAE
+          </Text><br/>
+          <FontAwesomeIcon color='brown' icon={faCalendar}/>
+          <Text color={'white'}>
+            31st July 1995
+          </Text>
+          </VStack>
+          </CardBody>
+          <CardFooter>
+            {/* <Button colorScheme='blue'>View here</Button> */}
+          </CardFooter>
+        </Card>
+        <Card backgroundColor={'black'}>
+          <CardHeader>
+            <Heading size='md' color={'white'}> Services</Heading>
+          </CardHeader>
+          <CardBody>
+          <Stack divider={<StackDivider />} spacing='4'>
+      <Box><br />
+        <Heading size='xs' textTransform='uppercase' color={'white'}>
+          Summary
+        </Heading>
+        <Text pt='2' fontSize='sm' color={'white'}>
+          View a summary of all your clients over the last month.
+        </Text>
+      </Box><br />
+      <Box>
+        <Heading size='xs' textTransform='uppercase' color={'white'}>
+          Overview
+        </Heading>
+        <Text pt='2' fontSize='sm'color={'white'}>
+          Check out the overview of your clients.
+        </Text>
+      </Box><br />
+      <Box>
+        <Heading size='xs' textTransform='uppercase' color={'white'}>
+          Analysis
+        </Heading>
+        <Text pt='2' fontSize='sm' color={'white'}>
+          See a detailed analysis of all your business clients.
+        </Text>
+      </Box>
+    </Stack>
+          </CardBody>
+          <CardFooter>
+            {/* <Button colorScheme='blue'>View here</Button> */}
+          </CardFooter>
+        </Card>
+      </SimpleGrid>
     
     </div>
   )
