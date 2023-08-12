@@ -3,7 +3,7 @@ import './AboutMe.css'
 import { Card, StackDivider, Box, CardHeader, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Button, ButtonGroup, SimpleGrid, VStack} from '@chakra-ui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faCalendar, faMapLocation } from '@fortawesome/free-solid-svg-icons'
-
+import CV from './Fidha_Rafeeque_N_Resume.pdf';
 
 
 function AboutMe() {
@@ -35,7 +35,7 @@ function AboutMe() {
               Hire Me
             </Button>
             <Button variant='ghost' colorScheme='blue'>
-              Download CV
+              <a href={CV} download="Fidha_Rafeeque_resume">Download CV</a>
             </Button>
           </ButtonGroup>
         </CardFooter>
@@ -72,38 +72,38 @@ function AboutMe() {
             <Heading size='md' color={'white'}> Services</Heading>
           </CardHeader>
           <CardBody>
-          <Stack divider={<StackDivider />} spacing='4'>
-      <Box><br />
-        <Heading size='xs' textTransform='uppercase' color={'white'}>
-          Summary
-        </Heading>
-        <Text pt='2' fontSize='sm' color={'white'}>
-          View a summary of all your clients over the last month.
-        </Text>
-      </Box><br />
-      <Box>
-        <Heading size='xs' textTransform='uppercase' color={'white'}>
-          Overview
-        </Heading>
-        <Text pt='2' fontSize='sm'color={'white'}>
-          Check out the overview of your clients.
-        </Text>
-      </Box><br />
-      <Box>
-        <Heading size='xs' textTransform='uppercase' color={'white'}>
-          Analysis
-        </Heading>
-        <Text pt='2' fontSize='sm' color={'white'}>
-          See a detailed analysis of all your business clients.
-        </Text>
-      </Box>
-    </Stack>
-          </CardBody>
-          <CardFooter>
+          <Stack divider={<StackDivider/>} spacing='4'>
+            <Box><br />
+              <Heading size='xs' textTransform='uppercase' color={'white'}>
+                 Web Development
+              </Heading>
+              <Text pt='2' fontSize='sm' color={'white'}>
+                Full Stack Developer focusing on MERN stack.
+              </Text>
+            </Box><br />
+            <Box>
+              <Heading size='xs' textTransform='uppercase' color={'white'}>
+                Mobile App Development
+              </Heading>
+              <Text pt='2' fontSize='sm'color={'white'}>
+                Developing user friendly mobile apps using React Native.
+              </Text>
+            </Box><br />
+            <Box>
+             <Heading size='xs' textTransform='uppercase' color={'white'}>
+                Management
+            </Heading>
+            <Text pt='2' fontSize='sm' color={'white'}>
+             Team and client management.
+            </Text>
+            </Box>
+          </Stack>
+        </CardBody>
+        <CardFooter>
             {/* <Button colorScheme='blue'>View here</Button> */}
-          </CardFooter>
-        </Card>
-      </SimpleGrid>
+        </CardFooter>
+      </Card>
+    </SimpleGrid>
     
     </div>
   )
