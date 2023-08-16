@@ -9,6 +9,7 @@ import Resume from './components/resume/Resume';
 function App() {
   return (
     <div>
+      
       <Mainpage />
       <AboutMe />
       <Resume />
